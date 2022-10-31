@@ -1,4 +1,3 @@
-
 def validate_dict(rules, dictionary):
     for rule in rules:
         if rule[0] not in dictionary:
@@ -13,10 +12,11 @@ def validate_dict(rules, dictionary):
 
 
 def main():
-    print(validate_dict([("key1", "", "inside", ""), ("key2", "start", "middle", "winter")]  ,{"key1": "come inside, it's too cold out", "key3": "this is not valid"}))
-    print(validate_dict([("key1", "", "inside", ""), ("key2", "start", "middle", "winter")]  ,{"key1": "come inside, it's too cold out", "key2": "start and middle and winter"}))
- 
+    print(validate_dict([("key1", "", "inside", ""), ("key2", "start", "middle", "winter")],
+                        {"key1": "come inside, it's too cold out", "key3": "this is not valid"}))
+    print(validate_dict([("key1", "", "inside", ""), ("key2", "start", "middle", "winter")],
+                        {"key1": "come inside, it's too cold out", "key2": "start and middle and winter"}))
+
+
 if __name__ == '__main__':
     main()
-
-

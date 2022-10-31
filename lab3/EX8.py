@@ -1,11 +1,10 @@
-
 def loop(mapping):
-    list = []
+    my_list = []
     key = mapping["start"]
-    while key not in list:
-        list.append(key)
+    while key not in my_list:
+        my_list.append(key)
         key = mapping[key]
-    return list
+    return my_list
 
 
 def main():

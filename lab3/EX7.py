@@ -1,4 +1,3 @@
-
 def operations(*sets):
     operations_dict = {}
     for i in range(len(sets)):
@@ -10,10 +9,9 @@ def operations(*sets):
     return operations_dict
 
 
-
 def main():
     print(operations({1, 2, 3, 4}, {3, 4, 5, 6}))
-    
+
 
 if __name__ == '__main__':
     main()

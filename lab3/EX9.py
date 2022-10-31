@@ -1,10 +1,9 @@
-
 def count(*args, **dict_elements):
-    count = 0
+    nr = 0
     for i in args:
         if i in dict_elements.values():
-            count += 1
-    return count
+            nr += 1
+    return nr
 
 
 def main():
